@@ -2,6 +2,8 @@
  * Closure:
  * In FP a func can return a func
  * In OOP have to return a object
+ * Closure function can only be an anonymous function but not named function
+* Associates a state with a function
  */
 
 //OOP
