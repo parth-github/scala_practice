@@ -29,3 +29,4 @@ object ArgsDemo extends App {
   }
   printFn("hello", "hi", "how", "are", "you")
 }
+
