@@ -23,17 +23,24 @@ object MoviesRatingCount extends App {
   val mappedInput = rdd1.map(x => x.split("\t")(2))
   //rdd2.collect.foreach(println)
 
+  /**
+   * Equivalent code for next two lines
+   * val totalByRatings = mappedRatings.countByValue
+   */
+
+    //OR
   // map each row with count value 1
   val mappedRatings = mappedInput.map(x => (x,1))
 
+
   // take each row of mappedRatings RDD, add group by key and add each row value with total
   val totalByRatings = mappedRatings.reduceByKey(_+_)
-
+  //val totalByRatings = mappedInput.countByValue()
   totalByRatings.foreach(println)
 
   //above RDD gives output by descending key of movie ratings
   //sort it with ascending key
-  val sortedRating = totalByRatings.sortBy(_._2, ascending = true)
+  val sortedRating = totalByRatings.sortBy(_._1, ascending = false)
   sortedRating.collect.foreach(println)
 
 

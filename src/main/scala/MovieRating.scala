@@ -28,6 +28,7 @@ object MovieRating extends App {
   sortedTotal.collect.foreach(println)
 
 
+
   // rdd4.saveAsTextFile("file:///E:\\spark-scala-project\\scala_practice\\outputpath\\customerorders_output")
 
 

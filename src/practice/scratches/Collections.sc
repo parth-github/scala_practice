@@ -9,7 +9,7 @@
 
 // Array
 val arrA: Array[Int] = Array(1, 2, 3, 4, 5)
-println(arrA)
+//println(arrA)
 println(arrA.mkString("||"))
 
 for (i <- arrA) println(i)
@@ -44,14 +44,19 @@ xList(3)
 // used for db records
 // 2 elements are called key, value pair
 
-val tuple1 : (String, Int) = ("Smriti", 25)
+val tuple1 : (String, Int, Int) = ("Smriti", 25, 60)
 tuple1._2
 tuple1._1
+
+val sub_tuple = tuple1[1,3]
+
 
 val keyVal = 107 -> "One Hundred and Seven"
 keyVal._2
 
 keyVal.swap
+
+
 
 // Set
 val setA = Set(1,2,3,1,2,3,4)
