@@ -14,7 +14,7 @@ object lesson1_bigdata_capmpaign extends App {
   val rdd3 = rdd2.flatMapValues(x => x.split(" "))
   val rdd4 = rdd3.map(x => (x._2.toLowerCase(), x._1))
   val rdd5 = rdd4.reduceByKey(_+_)
-  val rdd6 = rdd4.sortBy(x => x._2, false)
+  val rdd6 = rdd4.sortBy(x => x._2, ascending = false)
   rdd6.take(20).foreach(println)
 
   scala.io.StdIn.readLine()
