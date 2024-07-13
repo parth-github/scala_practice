@@ -34,7 +34,7 @@ object BroadcastVariable extends App {
 
   val sc = new SparkContext("local[*]", "lesson2_bigdata_capmpaign")
 
-  val nameSet = sc.broadcast(loadBoardingWords)
+  val nameSet = sc.broadcast(loadBoardingWords())
 
   val rdd1 = sc.textFile("file:///E:\\spark-scala-project\\scala_practice\\inputpath\\bigdatacampaigndata.csv")
   val rdd2 = rdd1.map(x => (x.split(",")(10).toFloat, x.split(",")(0)))
