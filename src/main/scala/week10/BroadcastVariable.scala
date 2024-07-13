@@ -19,8 +19,9 @@ object BroadcastVariable extends App {
     for (line <- lines) {
       boringWords += line
     }
-    boringWords
+
     linesSource.close()
+    boringWords
   }
 
   //For the sake of completeness
