@@ -1,7 +1,7 @@
 //type system
-/**
+/** Any
  * AnyVal:
- * Char
+ *
  * Byte
  * Short
  * Int
@@ -10,8 +10,8 @@
  * Double
  *
  * Boolean
- *
- * Unit - void return type, eg. print()
+ * Char
+ * Unit - void return type having side effect, eg. print()
  */
 
 /**
@@ -23,14 +23,16 @@
  * Range
  * Array
  * Set
+ * Null
+ * Nothing
  */
 
 /**
  * Any = AnyVal + AnyRef
  * Null - an object; valid only for AnyRef
  * Nothing - absence of a value
- * None -
- * Some
+ * Option = None + Some
+ * Some[String]
  * null - value
  */
 

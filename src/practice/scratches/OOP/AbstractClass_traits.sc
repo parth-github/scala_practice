@@ -1,5 +1,5 @@
 /**
- * Abstract class
+ * Abstract class and interface
  * can contain unimplemented methods and undefined values
  * purpose is to implement it in child class
  * instantiation is not possible

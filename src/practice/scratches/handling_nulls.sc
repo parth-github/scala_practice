@@ -5,7 +5,7 @@
  * None
  * Nothing - there was an error and nothing is returned
  * Option - returns Some or None
- * Unit
+ * Unit - void
  */
 
 def tryNull(thing: Null): Unit = println("that worked")
